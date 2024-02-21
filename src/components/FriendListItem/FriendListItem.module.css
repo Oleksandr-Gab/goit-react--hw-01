@@ -1,0 +1,50 @@
+.avatar {
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.isOnline {
+    color: green;
+}
+
+.isOffline {
+    color: red;
+}
+
+@media screen and (min-width: 768px) {
+    .avatar {
+        width: 86px;
+    }
+
+    .name {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .isOnline {
+        font-size: 22px;
+    }
+
+    .isOffline {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .avatar {
+        width: 120px;
+    }
+
+    .name {
+        font-size: 32px;
+    }
+    .isOnline {
+        font-size: 28px;
+    }
+
+    .isOffline {
+        font-size: 28px;
+    }
+}

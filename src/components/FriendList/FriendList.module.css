@@ -1,0 +1,32 @@
+.friendList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.friendCard {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 5px;
+    padding: 8px;
+    width: calc((100% - 12px * 2) / 3);
+}
+
+@media screen and (min-width: 375px) {
+    .friendCard {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .friendCard {
+        width: calc((100% - 12px * 4) / 5);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
