@@ -1,21 +1,23 @@
-const TransactionHistory = ( {items} ) => {
+import css from "./TransactionHistory.module.css";
+
+const TransactionHistory = ({ items }) => {
     return (
-        <table>
-            <thead>
+        <table className={css.table}>
+            <thead className={css.thead}>
                 <tr>
-                <th>Type</th>
-                <th>Amount</th>
-                <th>Currency</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Currency</th>
                 </tr>
             </thead>
 
-            <tbody>
+            <tbody className={css.tbody}>
                 {items.map((item) => (
-                <tr key={item.id}>
-                    <td>{item.type}</td>
-                    <td>{item.amount}</td>
-                    <td>{item.currency}</td>
-                </tr>
+                    <tr key={item.id}>
+                        <td>{item.type}</td>
+                        <td>{item.amount}</td>
+                        <td>{item.currency}</td>
+                    </tr>
                 ))}
             </tbody>
         </table>
